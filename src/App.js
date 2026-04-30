@@ -10,7 +10,7 @@ const [error, setError] = useState (false);
 useEffect(() => {
   const getData = async () => {
     try {const res = await
-    axios.get('https://pokeapi.co/api/v2/pokemon/arceus');
+    axios.get('https://pokeapi.co/api/v2/pokemon/totodile');
         setPokemons(res.data);
         console.log('success:', res.data);
         setLoading(false);
