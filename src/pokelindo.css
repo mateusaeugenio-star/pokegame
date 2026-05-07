@@ -1,0 +1,24 @@
+.App {
+    text-align: center;
+  }
+  body {
+    background-image: url('../assets/capa.webp');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    height: 100vh;  
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .pokemon-card{
+    box-align: center;
+    padding: 10px;
+    height: 400px;
+    width: 200px;
+    margin: 50px auto;
+    background: radial-gradient(white , rgb(130, 241, 78));
+    border-radius: 10px;
+  }
