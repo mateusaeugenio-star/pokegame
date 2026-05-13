@@ -2,24 +2,26 @@
   text-align: center;
 }
 .App {
-  background-image: url('../assets/capa.webp');
+  text-align: center;
+  background-image: url('assets/capa.png');
   background-size: cover;
   background-position: center;
-  min-height: 100vh
+  min-height: 100vh;       
+  display: flex;
+  align-items: center;     
+  justify-content: center; 
 }
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-.pokemon-card{
-  padding: 100%;
+.pokemon-card {
   text-align: center;
-  box-align: center;
   padding: 10px;
-  height: 310px;
+  height: 360px;
   width: 170px;
-  margin: 190px auto 0 auto;
-  background: radial-gradient(white , rgb(100, 100, 100));
+  margin: auto;
+  background: radial-gradient(white, rgb(100, 100, 100));
   border-radius: 10px;
 }
