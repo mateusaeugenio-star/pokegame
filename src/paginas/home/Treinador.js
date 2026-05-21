@@ -21,12 +21,12 @@ function Treinador() {
         <h3>nickname: pal4din</h3>
         <h3>pokemon: 3</h3>
         <h3>0 badges</h3>
-        <Link to="/Totodile"><button className="pokebola"/></Link>
-        <Link to="/Zubat"><button className="pokebola"/></Link>
-        <Link to="/Ralts"><button className="pokebola"/></Link>
-        <Link to="/Zubat"><button className="pokebola"/></Link>
-        <Link to="/Zubat"><button className="pokebola"/></Link>
-        <Link to="/Zubat"><button className="pokebola"/></Link>
+        <Link to="/todosPokemons/totodile"><button className="pokebola"/></Link>
+        <Link to="/todospokemons/Zubat"><button className="pokebola"/></Link>
+        <Link to="/todospokemons/Ralts"><button className="pokebola"/></Link>
+        <Link to="/todospokemons/arceus"><button className="pokebola"/></Link>
+        <Link to="/todospokemons/arceus"><button className="pokebola"/></Link>
+        <Link to="/todospokemons/arceus"><button className="pokebola"/></Link>
         
       </div>
 
