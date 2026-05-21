@@ -2,7 +2,7 @@
     text-align: center;
   }
   body {
-    background-image: url('assets/capa.png');
+    background-image: url('../../assets/background/home.png');
     background-size: cover;
     background-position: center;
     text-align: center;
@@ -16,20 +16,25 @@
   .treinador-card{
     box-align: center;
     padding: 10px;
-    height: 400px;
-    width: 200px;
+    height: 550px;
+    width: 230px;
     margin: 50px auto;
     background: radial-gradient(white , rgb(130, 241, 78));
     border-radius: 10px;
   }
   .pokebola{
-   
-      background-image: url("assets/pokebola.png");
-      width: 67px;
-      height: 67px;
+      color: transparent;
+      background-image: url("../../assets/pokebola.png");
+      width: 54px;
+      height: 54px;
       background-size: cover ;
       background-position: center;
       background-color: transparent;
       border: transparent;  
       cursor: pointer;
+      margin-top: 15px;
+  }
+  .pokebola:hover{
+    transform: translateY(-10px);
+    transition: transform 0.3s ease
   }

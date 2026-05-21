@@ -3,7 +3,7 @@
 }
 .App {
   text-align: center;
-  background-image: url('assets/capa.png');
+  background-image: url('../../assets/background/agua.jpg');
   background-size: cover;
   background-position: center;
   min-height: 100vh;       
@@ -20,8 +20,8 @@
   text-align: center;
   padding: 10px;
   height: 360px;
-  width: 170px;
+  width: 180px;
   margin: auto;
-  background: radial-gradient(white, rgb(100, 100, 100));
+  background: radial-gradient(white, rgb(15, 96, 161));
   border-radius: 10px;
 }

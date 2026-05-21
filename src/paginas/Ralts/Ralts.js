@@ -1,40 +1,21 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import './pokebonito.css';
+import './Ralts.css';
+import useFetchpokeapi from '../../hooks/usefetchpokeapi';
 
-function Pokemon() {
-const [pokemons, setPokemons] = useState ({});
-const [loading, setLoading] = useState (true);
-const [error, setError] = useState (false);
+function Ralts() {
+    const {pokemons,loading,error} = useFetchpokeapi ("Ralts");
 
-useEffect(() => {
-  const getData = async () => {
-    try {const res = await
-    axios.get('https://pokeapi.co/api/v2/pokemon/totodile');
-        setPokemons(res.data);
-        console.log('success:', res.data);
-        setLoading(false);
-    }
-    catch (err)  {
-      console.error ("erro ao carregar API", err);
-      setLoading(false)
-      setError (true)
-    }
-  };
-  getData();
-}, {})
-
-
-  if (loading) return <
+    if (loading) return <
     div className='loader'> carregando pokedex...
   </div>;
 
-  if (error) return <div className='erSror'>
+  if (error) return <div className='error'>
   ocorreu um erro inesperado
   </div>;
 
   return (
-    <div className="App">
+    <div className="App3">
   <div className="pekemon-container">
     <div className="pokemon-card">
       <h1>poke card</h1>  
@@ -52,4 +33,4 @@ useEffect(() => {
   );
 }
 
-export default Pokemon;  
+export default Ralts;  

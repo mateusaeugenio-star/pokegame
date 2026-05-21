@@ -1,0 +1,27 @@
+.App3 {
+    text-align: center;
+  }
+  .App3 {
+    text-align: center;
+    background-image: url('../../assets/background/floresta.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;       
+    display: flex;
+    align-items: center;     
+    justify-content: center; 
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .pokemon-card {
+    text-align: center;
+    padding: 10px;
+    height: 360px;
+    width: 180px;
+    margin: auto;
+    background: radial-gradient(white, rgb(25, 201, 83));
+    border-radius: 10px;
+  }

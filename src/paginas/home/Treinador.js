@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import './pokelindo.css';
-import bokunomiku from './assets/treinador.png';
-import pokebolas from './assets/pokebola.png';
+import bokunomiku from '../../assets/treinador.png';
+
 
 function Treinador() {
 
@@ -19,10 +19,14 @@ function Treinador() {
         <h3>nome: Mateus A Eugenio</h3>
         <h3>idade: 18</h3>
         <h3>nickname: pal4din</h3>
-        <h3>pokemon: 1</h3>
+        <h3>pokemon: 3</h3>
         <h3>0 badges</h3>
-        <Link to="/pokemon"><button className="pokebola"/> </Link>
-        
+        <Link to="/Totodile"><button className="pokebola"/></Link>
+        <Link to="/Zubat"><button className="pokebola"/></Link>
+        <Link to="/Ralts"><button className="pokebola"/></Link>
+        <Link to="/Zubat"><button className="pokebola"/></Link>
+        <Link to="/Zubat"><button className="pokebola"/></Link>
+        <Link to="/Zubat"><button className="pokebola"/></Link>
         
       </div>
 
