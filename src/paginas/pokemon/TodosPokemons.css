@@ -17,6 +17,12 @@
     box-sizing: border-box;
   }
 
+  .App.normal{
+    background-image: url('../../assets/background/aceus.png');
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+  }
   .App.poison{
     background-image: url('../../assets/background/terra.png');
     text-align: center;
@@ -38,7 +44,6 @@
     background: radial-gradient(white, rgb(15, 96, 161));
     border-radius: 10px;
   }
-
 .pokemon-card.water{
     background: radial-gradient(white, rgb(15, 96, 161));
 }
