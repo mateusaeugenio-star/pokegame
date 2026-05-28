@@ -24,7 +24,7 @@ function Treinador() {
         <Link to="/todosPokemons/totodile"><button className="pokebola"/></Link>
         <Link to="/todospokemons/Zubat"><button className="pokebola"/></Link>
         <Link to="/todospokemons/Ralts"><button className="pokebola"/></Link>
-        <Link to="/todospokemons/arceus"><button className="pokebola"/></Link>
+        <Link to="/todospokemons/Miltank"><button className="pokebola"/></Link>
         <Link to="/todospokemons/arceus"><button className="pokebola"/></Link>
         <Link to="/todospokemons/arceus"><button className="pokebola"/></Link>
         

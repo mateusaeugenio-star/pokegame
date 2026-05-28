@@ -23,7 +23,6 @@ const {pokemons,loading,error} = useFetchpokeapi (id);
          style={{ width: '150px', height: '150px' }} />
   <h3>{pokemons.stats[0].stat.name}: {pokemons.stats[0].base_stat}</h3>  {/* hp */}
   <h3>{pokemons.stats[1].stat.name}: {pokemons.stats[1].base_stat}</h3>  {/* attack */}
-  <h3>{pokemons.stats[2].stat.name}: {pokemons.stats[2].base_stat}</h3>  {/* defense */}
              </div>
        </div>
      </div>

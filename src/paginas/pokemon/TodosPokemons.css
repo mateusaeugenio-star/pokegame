@@ -18,7 +18,7 @@
   }
 
   .App.normal{
-    background-image: url('../../assets/background/aceus.png');
+    background-image: url('../../assets/background/normal.png');
     text-align: center;
     background-size: cover;
     background-position: center;
@@ -53,4 +53,7 @@
 }
 .pokemon-card.poison{
     background: radial-gradient(white, rgb(53, 71, 73));
+}
+.pokemon-card.normal{
+  background: radial-gradient(white, rgb(194, 212, 214));
 }
