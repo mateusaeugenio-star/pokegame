@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import '../totodile/Totodile';
+import './TodosPokemons.css';
 import useFetchpokeapi from '../../hooks/usefetchpokeapi';
 import {useParams} from "react-router-dom";
 
@@ -13,13 +13,13 @@ const {pokemons,loading,error} = useFetchpokeapi (id);
   if (error) return <div className='error'>ocorreu um erro inesperado</div>;
 
   return (
-    <div className="App">
+    <div className={`App ${pokemons.types[0].type.name}`}>
   <div className="pekemon-container">
-    <div className="pokemon-card">
+    <div className={`pokemon-card ${pokemons.types[0].type.name}`}>
       <h1>poke card</h1>  
       <h3>{pokemons.name}</h3>
          <h2 className='tipo-pokemon1'>{pokemons.types[0].type.name}</h2>
-         <img src={pokemons.sprites.front_default} alt={pokemons.name}
+         <img src={pokemons.sprites.other['official-artwork'].front_default} alt={pokemons.name}
          style={{ width: '150px', height: '150px' }} />
   <h3>{pokemons.stats[0].stat.name}: {pokemons.stats[0].base_stat}</h3>  {/* hp */}
   <h3>{pokemons.stats[1].stat.name}: {pokemons.stats[1].base_stat}</h3>  {/* attack */}

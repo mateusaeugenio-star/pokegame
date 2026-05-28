@@ -1,0 +1,51 @@
+.App {
+    text-align: center;
+  }
+  .App {
+    text-align: center;
+    background-size: cover;
+    background-image: url('../../assets/background/agua.jpg');
+    background-position: center;
+    min-height: 100vh;       
+    display: flex;
+    align-items: center;     
+    justify-content: center; 
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .App.poison{
+    background-image: url('../../assets/background/terra.png');
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+  }
+  .App.psychic{
+    background-image: url('../../assets/background/psychic\ 3.png');
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+  }
+  .pokemon-card {
+    text-align: center;
+    padding: 10px;
+    height: 360px;
+    width: 180px;
+    margin: auto;
+    background: radial-gradient(white, rgb(15, 96, 161));
+    border-radius: 10px;
+  }
+
+.pokemon-card.water{
+    background: radial-gradient(white, rgb(15, 96, 161));
+}
+
+.pokemon-card.psychic{
+    background: radial-gradient(white, rgb(77, 17, 126));
+}
+.pokemon-card.poison{
+    background: radial-gradient(white, rgb(53, 71, 73));
+}

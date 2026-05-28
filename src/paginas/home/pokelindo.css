@@ -2,7 +2,7 @@
     text-align: center;
   }
   body {
-    background-image: url('../../assets/background/home.png');
+    background-image: url('../../assets/background/home\ 2.gif');
     background-size: cover;
     background-position: center;
     text-align: center;
@@ -19,7 +19,7 @@
     height: 550px;
     width: 230px;
     margin: 50px auto;
-    background: radial-gradient(white , rgb(130, 241, 78));
+    background: radial-gradient(white , rgb(110, 44, 233));
     border-radius: 10px;
   }
   .pokebola{
