@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './TodosPokemons.css';
 import useFetchpokeapi from '../../hooks/usefetchpokeapi';
-import {useParams} from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 function Totodile() {
     const {id} = useParams();
@@ -23,10 +23,12 @@ const {pokemons,loading,error} = useFetchpokeapi (id);
          style={{ width: '150px', height: '150px' }} />
   <h3>{pokemons.stats[0].stat.name}: {pokemons.stats[0].base_stat}</h3>  {/* hp */}
   <h3>{pokemons.stats[1].stat.name}: {pokemons.stats[1].base_stat}</h3>  {/* attack */}
+             
+  <Link to="/"><button className="voltar"/></Link>
+             
              </div>
        </div>
      </div>
-  
   );
 }
 

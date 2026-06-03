@@ -2,10 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 import '../paginas/home/pokelindo.css'
 
-function Botaolegal(){
-    return <button className="pokebolas"></button>
+function Botaolegalfight(){
+    return <button className="pokebolasluta"></button>
 }
 
-export default Botaolegal;import React from "react";
+export default Botaolegalfigh; import React from "react";
 import { Link } from "react-router-dom";
 import '../paginas/home/pokelindo.css'

@@ -1,40 +1,56 @@
-.App {
-    text-align: center;
-  }
-  body {
-    background-image: url('../../assets/background/home\ 2.gif');
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-    height: 100vh;  
-  }
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  .treinador-card{
-    box-align: center;
-    padding: 10px;
-    height: 550px;
-    width: 230px;
-    margin: 50px auto;
-    background: radial-gradient(white , rgb(110, 44, 233));
-    border-radius: 10px;
-  }
-  .pokebola{
+  .App {
+      text-align: center;
+    }
+    body {
+      background-image: url('../../assets/background/home\ 2.gif');
+      background-size: cover;
+      background-position: center;
+      text-align: center;
+      height: 100vh;  
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .treinador-card{
+      box-align: center;
+      padding: 10px;
+      height: 550px;
+      width: 230px;
+      margin: 50px auto;
+      background: radial-gradient(white , rgb(110, 44, 233));
+      border-radius: 10px;
+    }
+    .pokebola{
+        color: transparent;
+        background-image: url("../../assets/pokebola.png");
+        width: 54px;
+        height: 54px;
+        background-size: cover ;
+        background-position: center;
+        background-color: transparent;
+        border: transparent;  
+        cursor: pointer;
+        margin-top: 15px;
+    }
+    .pokebola:hover{
+      transform: translateY(-10px);
+      transition: transform 0.3s ease
+    }
+    .lutabotao{
       color: transparent;
-      background-image: url("../../assets/pokebola.png");
-      width: 54px;
-      height: 54px;
+      background-image: url("../../assets/fight.png");
+      width: 140px;
+      height: 50px;
       background-size: cover ;
       background-position: center;
       background-color: transparent;
       border: transparent;  
       cursor: pointer;
-      margin-top: 15px;
+      margin-top: 40px;
   }
-  .pokebola:hover{
-    transform: translateY(-10px);
+  .lutabotao:hover{
+    transform: translateY(-5px);
     transition: transform 0.3s ease
   }
