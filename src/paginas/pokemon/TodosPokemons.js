@@ -1,36 +1,40 @@
-
+                                                             
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './TodosPokemons.css';
 import useFetchpokeapi from '../../hooks/usefetchpokeapi';
 import { Link, useParams } from "react-router-dom";
-
-function Totodile() {
+                                     
+function TodosPokemons() {
     const {id} = useParams();
-
-const {pokemons,loading,error} = useFetchpokeapi (id);
+                                          
+const {myPokemon,loading,error} = useFetchpokeapi (id);
   if (loading) return <div className='loader'> carregando pokedex...</div>;
   if (error) return <div className='error'>ocorreu um erro inesperado</div>;
-
-  return (
-    <div className={`App ${pokemons.types[0].type.name}`}>
-  <div className="pekemon-container">
-    <div className={`pokemon-card ${pokemons.types[0].type.name}`}>
-      <h1>poke card</h1>  
-      <h3>{pokemons.name}</h3>
-         <h2 className='tipo-pokemon1'>{pokemons.types[0].type.name}</h2>
-         <img src={pokemons.sprites.other['official-artwork'].front_default} alt={pokemons.name}
+                                                              
+  return (                                      
+    <div className={`App ${myPokemon.tipo}`}>
+  <div className="Pokemon-container">
+    <div className={`Pokemon-card ${myPokemon.tipo}`}>
+      <h1>poke card</h1>                      
+      <h3>{myPokemon.nome}</h3>           
+         <h2 className='tipo-pokemon1'>{myPokemon.tipo}</h2>
+         <img src={myPokemon.imagem} alt={myPokemon.nome}
          style={{ width: '150px', height: '150px' }} />
-  <h3>{pokemons.stats[0].stat.name}: {pokemons.stats[0].base_stat}</h3>  {/* hp */}
-  <h3>{pokemons.stats[1].stat.name}: {pokemons.stats[1].base_stat}</h3>  {/* attack */}
-             
-  <Link to="/"><button className="voltar"/></Link>
-             
-             </div>
-       </div>
-     </div>
-  );
-}
+          <h3>
+          Vida: {myPokemon.vida*10}
+          </h3>  
+          <h3>
+          Ataque: {myPokemon.ataque}
+          </h3>  
+  <Link to="/"><button className="voltar"/></Link>                         
+                                                                
+             </div>                                     
+       </div>                                            
+     </div>                                                                 
+  );                                                                         
+}                                                                                              
 
-export default Totodile;  
-
+export default TodosPokemons;  
+                                          
+                                                                
