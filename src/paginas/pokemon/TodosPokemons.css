@@ -36,7 +36,7 @@
     background-position: center;
   }
   .App.natureza{
-    background-image: url('../../assets/background/floresta.jpg');
+    background-image: url('../../assets/background/agua.jpg');
     text-align: center;
     background-size: cover;
     background-position: center;
@@ -49,6 +49,12 @@
   }
   .App.agua {
     background-image: url('../../assets/background/agua\ 2.png');
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+  }
+  .App.tempestade {
+    background-image: url('../../assets/background/floresta.jpg');
     text-align: center;
     background-size: cover;
     background-position: center;
