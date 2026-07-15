@@ -25,28 +25,36 @@
     cursor: pointer;
     margin-top: 40px;
     position: fixed;
-    top: 5px;
-    right: 1540px;
+    top: 6px;
+    left: 10px
+ 
   }
-  .App.normal{
+  .App.corpo{
     background-image: url('../../assets/background/normal\ 2.png');
     text-align: center;
     background-size: cover;
     background-position: center;
   }
   .App.natureza{
-    background-image: url('../../assets/background/poison.png');
+    background-image: url('../../assets/background/floresta.jpg');
     text-align: center;
     background-size: cover;
     background-position: center;
   }
-  .App.psychic{
+  .App.mente{
     background-image: url('../../assets/background/psychic\ 5.png');
     text-align: center;
     background-size: cover;
     background-position: center;
   }
-  .pokemon-card {
+  .App.agua {
+    background-image: url('../../assets/background/agua\ 2.png');
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .Pokemon-card {
     text-align: center;
     padding: 10px;
     height: 360px;
@@ -67,4 +75,52 @@
 }
 .pokemon-card.normal{
   background: radial-gradient(white, rgb(194, 212, 214));
+}
+.evoluçao{
+  color: transparent;
+        background-image: url("../../assets/Pokeball.png");
+        width: 40px;
+        height: 40px;
+        background-size: cover ;
+        background-position: center;
+        background-color: transparent;
+        border: transparent;  
+        cursor: pointer;
+        margin-top: 15px; 
+}
+.evoluçao:hover{
+  transform: translateY(-10px);
+  transition: transform 0.3s ease
+}
+.evoluçao2{
+  color: transparent;
+        background-image: url("../../assets/Ultra\ Ball.png   ");
+        width: 40px;
+        height: 40px;
+        background-size: cover ;
+        background-position: center;
+        background-color: transparent;
+        border: transparent;  
+        cursor: pointer;
+        margin-top: 15px; 
+}
+.evoluçao2:hover{
+  transform: translateY(-10px);
+  transition: transform 0.3s ease
+}
+.evoluçao3{
+  color: transparent;
+        background-image: url("../../assets/master-ball.png");
+        width: 40px;
+        height: 40px;
+        background-size: cover ;
+        background-position: center;
+        background-color: transparent;
+        border: transparent;  
+        cursor: pointer;
+        margin-top: 10px; 
+}
+.evoluçao3:hover{
+  transform: translateY(-10px);
+  transition: transform 0.3s ease
 }

@@ -93,23 +93,38 @@ useEffect(() => {
  useEffect(() => {
   const setPoke = async () => {
     try {
+      if (!pokemons.name) return;
+
+      // Mapeia os nomes das evoluções com segurança
+      const evo1 = evolution?.chain?.species?.name || null;
+      const evo2 = evolution?.chain?.evolves_to?.[0]?.species?.name || null;
+      const evo3 = evolution?.chain?.evolves_to?.[0]?.evolves_to?.[0]?.species?.name || null;
+
       setMypokemon({
         nome:  pokemons.name,
         vida:  pokemons.stats[0].base_stat,
         ataque:  pokemons.stats[1].base_stat,
         tipo:  myType,
-        evolucao:  [evolution.chain.evolves_to[0].species.name],
         imagem:  pokemons.sprites.other['official-artwork'].front_default,
         imagemShiny:  pokemons.sprites.other['official-artwork'].front_shiny,
+        // Salvando os 3 estágios no objeto do pokemon
+        evo1,
+        evo2,
+        evo3
       });
     } catch (err) {
       console.log(err);
     }
   };  
   setPoke();
-}, [evolution, pokemons]);
+}, [evolution, pokemons, myType]); // Adicionado myType nas dependências para garantir a atualização do tipo
 
-    return{myPokemon,loading,error}
+// Garanta que o objeto retornado nunca seja nulo ou indefinido
+return { 
+  myPokemon: myPokemon || {}, 
+  loading, 
+  error 
+};
 }
 
 export default useFetchpokeapi;
